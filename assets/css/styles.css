@@ -608,17 +608,7 @@ justify-content: center;
   font-size: 1.31rem;
 }
 
-@media screen and (max-width: 900px) {
-  .wrapper .carousel {
-    grid-auto-columns: calc((100% / 2) - 9px);
-  }
-}
 
-@media screen and (max-width: 600px) {
-  .wrapper .carousel {
-    grid-auto-columns: 100%;
-  }
-}
 
 img {
     max-width: 100%;
@@ -769,7 +759,11 @@ justify-content: center;
     justify-items: center;
   }
 }
-
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -803,14 +797,16 @@ justify-content: center;
     color: var(--second-color);
   }
   .home {
+    
     padding: 8rem 0 2rem;
   }
   .home-img {
-    width: 400px;
-    bottom: 10%;
-    display: flex;
+display: flex;
 align-items: center;
 justify-content: center;
+    width: 400px;
+    bottom: 10%;
+    
 
   }
   .about__container {
@@ -830,6 +826,14 @@ justify-content: center;
     column-gap: 2rem;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+
 
 @media screen and (min-width: 992px) {
   .bd-grid {
@@ -868,8 +872,7 @@ justify-content: center;
 display: flex;
 align-items: center;
 justify-content: center;
-
-}
+  }
 }
 @media all and (max-width: 1024px) and (min-width: 768px){ 
   .bd-grid {
@@ -911,5 +914,3 @@ justify-content: center;
   }
 
 }
-
-
